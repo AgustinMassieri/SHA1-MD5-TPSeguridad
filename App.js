@@ -3,7 +3,7 @@ import { SafeAreaView, StyleSheet, Text, TextInput, TouchableOpacity,  } from 'r
 import SignUp from './screens/SignUp';
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import { NavigationContainer } from '@react-navigation/native'
-import Main from './screens/Main';
+import Index from './screens/Index';
 import SignIn from './screens/SignIn';
 
 
