@@ -23,7 +23,9 @@ const SignUp = () => {
   signUpUser = () =>{
     createUserWithEmailAndPassword(auth, email, password).then((res) => {
         setSuccessfulRegister(true);
+        setErrorRegister(false);
     }).catch((err) => {
+        setSuccessfulRegister(false);
         setErrorRegister(true);
     })
   }

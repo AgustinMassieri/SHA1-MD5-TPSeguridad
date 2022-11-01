@@ -24,7 +24,9 @@ const SignIn = () => {
 
     signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
         setSuccessfulLogin(true);
+        setErrorLogin(false);
     }).catch((error) => {
+        setSuccessfulLogin(false);
         setErrorLogin(true);
     });
     
