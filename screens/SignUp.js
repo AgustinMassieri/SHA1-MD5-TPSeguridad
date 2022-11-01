@@ -47,6 +47,7 @@ const SignUp = () => {
         </TouchableOpacity>
         {successfulRegister && (<Text style={{color: 'green'}}> Su usuario se genero de forma correcta! </Text>)}
         {errorMailAlreadyInUse && (<Text style={{color: 'red'}}> El mail ingresado ya esta en uso! </Text>)}
+        {errorInvalidEmail && (<Text style={{color: 'red'}}> El mail ingresado no es valido! </Text>)}
     </SafeAreaView>
   );
 }
