@@ -35,7 +35,7 @@ const SignIn = () => {
   return (
     <SafeAreaView style={styles.container}>
       <TextInput style={styles.input} placeholder='Email:' value={email} onChangeText={ (value) => setEmail(value) }/>
-      <TextInput style={styles.input} placeholder='Password:' value={password} onChangeText={ (value) => setPassword(value) }/>
+      <TextInput secureTextEntry={true} style={styles.input} placeholder='Password:' value={password} onChangeText={ (value) => setPassword(value) }/>
       <TouchableOpacity onPress={signUpUser}>
         <Text style={styles.button}>Sign !</Text>
       </TouchableOpacity>
