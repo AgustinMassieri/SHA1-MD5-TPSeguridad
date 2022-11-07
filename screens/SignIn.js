@@ -14,7 +14,7 @@ const SignIn = ({navigation}) => {
     signInWithEmailAndPassword(auth, email, password).then((userCredential) => {
         setSuccessfulLogin(true);
         setErrorLogin(false);
-        setTimeout(nextPage, 5000);
+        setTimeout(nextPage, 1000);
     }).catch((error) => {
         setSuccessfulLogin(false);
         setErrorLogin(true);

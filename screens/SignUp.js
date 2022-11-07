@@ -13,13 +13,6 @@ const SignUp = () => {
   const [errorMailAlreadyInUse, setErrorMailAlreadyInUse] = useState(false);
   const [errorInvalidEmail, setErrorInvalidEmail] = useState(false);
 
-  const onCovert = () => {
-    const aux = sha256(input);
-    setInputConvertedSHA256(aux);
-    const aux2 = md5(input);
-    setInputConvertedMD5(aux2);
-  }
-
   signUpUser = () =>{
     createUserWithEmailAndPassword(auth, email, password).then((res) => {
         setSuccessfulRegister(true);

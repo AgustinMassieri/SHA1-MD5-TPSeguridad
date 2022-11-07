@@ -30,6 +30,9 @@ const Main = ({navigation}) => {
             <TouchableOpacity onPress={onCovertMD5}>
                 <Text style={styles.button}>Apply MD5</Text>
             </TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate('Info')}>
+                <Text style={{marginTop: 15, fontStyle: 'italic', fontWeight: 'bold', color: 'blue'}}>More info</Text>
+            </TouchableOpacity>
         </SafeAreaView>
     )
 }

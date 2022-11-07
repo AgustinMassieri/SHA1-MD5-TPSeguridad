@@ -5,6 +5,7 @@ import Index from './screens/Index';
 import SignUp from './screens/SignUp';
 import SignIn from './screens/SignIn';
 import Main from './screens/Main';
+import Info from './screens/Info';
 
 const App = () => {
 
@@ -17,6 +18,7 @@ const App = () => {
         <Stack.Screen name="SignUp" component={SignUp}/>
         <Stack.Screen name="SignIn" component={SignIn}/>
         <Stack.Screen name="Main" component={Main}/>
+        <Stack.Screen name="Info" component={Info}/>
       </Stack.Navigator>
     </NavigationContainer> 
   );
